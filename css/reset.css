@@ -1,0 +1,78 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Corpo e fontes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #282828;
+    padding: 2px 8px;
+    color: #fff;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    gap: 8px;
+}
+
+.imgPerfil{
+    aspect-ratio: 1;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo e navegação */
+/* nav {
+    background-color: #333;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    color: #007bff;
+} */
