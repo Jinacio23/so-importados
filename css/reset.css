@@ -19,7 +19,7 @@ body {
 
 header{
     background-color: #282828;
-    padding: 2px 8px;
+    padding: 10px 10px 16px ;
     color: #fff;
 }
 
@@ -48,31 +48,32 @@ img{
 
 .nav-list{
     display: flex;
-    justify-content: space-between;
-}
-
-/* Logo e navegação */
-/* nav {
-    background-color: #333;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
     justify-content: center;
-    padding: 10px;
+    gap: 10px;
+    color: #fff;
 }
 
-.nav-list li {
-    margin: 0 20px;
+.nav-list li a{
+    color: #fff;
 }
 
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+.logo{
+    background-color: #d45003;
+    padding: 5px;
+    width: 125px;
+    border-top-right-radius: 20px;
 }
 
-.nav-list a:hover {
-    color: #007bff;
-} */
+.logo::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #d45003;
+    position: absolute;
+    left: 150px;
+    top: 20px
+}
+
+.logo h1{
+    word-wrap: break-word;
+}

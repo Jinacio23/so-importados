@@ -21,7 +21,8 @@
     height: auto;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -44,7 +45,7 @@
 /* Estilos dos cards de produtos */
 .product-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 40px 0;
     flex-wrap: wrap;
 }
@@ -53,7 +54,7 @@
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 30%;
+    width: 20%;
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -128,7 +129,7 @@ footer a:hover {
     .logo {
         width: 120px;
     }
-    
+
     .product-card {
         width: 90%;
     }
