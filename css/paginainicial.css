@@ -1,4 +1,9 @@
-/* Estilos dos cards de produtos */
+/* Definindo fontes elegantes e modernas */
+body {
+    font-family: 'Quicksand', sans-serif; /* Fonte moderna e suave */
+    background-color: #f7f7f7; /* Fundo neutro para destacar os cards */
+}
+
 .product-section {
     display: flex;
     justify-content: center;
@@ -7,59 +12,82 @@
 }
 
 .product-card {
-    background-color: white;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Gradiente suave de fundo */
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px; /* Bordas mais arredondadas */
     width: 20%;
     padding: 20px;
     text-align: center;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombras mais sutis */
+    transition: transform 0.4s ease, box-shadow 0.3s ease, filter 0.3s ease, background 0.4s ease; /* Transições mais dinâmicas */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Movimento mais pronunciado */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    filter: brightness(1.05); /* Aumenta a luminosidade do card */
+    background: linear-gradient(135deg, #ff7f50, #ff6347); /* Alteração de cor ao passar o mouse (cor laranja suave) */
+}
+
+.product-card:hover h5, 
+.product-card:hover p, 
+.product-card:hover strong {
+    color: #fff; /* Cor branca para o texto se destacar sobre o fundo laranja */
 }
 
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação para imagem */
+}
+
+.product-card img:hover {
+    transform: scale(1.1); /* Expande a imagem em 10% */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Aumenta a sombra quando aumenta a imagem */
 }
 
 .product-card h5 {
-    font-size: 1.2rem;
-    margin: 15px 0;
+    font-size: 1.3rem; /* Tamanho maior para o título */
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif; /* Fonte serifada elegante */
+    color: #2d2d2d; /* Cor mais forte para destacar o título */
+    font-weight: bold; /* Título mais forte */
+    transition: color 0.3s ease; /* Transição suave para a cor */
 }
 
 .product-card p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1rem; /* Tamanho de fonte confortável */
+    color: #666; /* Cor mais suave */
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5; /* Maior espaçamento entre linhas para legibilidade */
+    transition: color 0.3s ease; /* Transição suave para a cor */
 }
 
 .product-card strong {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Peso mais forte */
+    letter-spacing: 0.5px; /* Um leve espaçamento entre as letras para maior destaque */
+    transition: color 0.3s ease; /* Transição suave para a cor */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .nav-list {
-        flex-direction: column;
-    }
-
     .product-section {
         flex-direction: column;
         align-items: center;
     }
 
     .product-card {
-        width: 80%;
+        width: 80%; /* Card mais largo em telas menores */
+        margin: 15px 0;
     }
 }
 
@@ -69,6 +97,19 @@
     }
 
     .product-card {
-        width: 90%;
+        width: 90%; /* Card ainda mais largo em telas pequenas */
     }
 }
+
+/* Efeitos nos ícones e interatividade adicional */
+.product-card .icon {
+    font-size: 2rem; /* Ícones maiores */
+    color: #ba4500; /* Cor chamativa para ícones */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para ícones */
+}
+
+.product-card .icon:hover {
+    transform: rotate(15deg); /* Pequena rotação ao passar o mouse */
+    color: #333; /* Troca a cor para um tom mais neutro */
+}
+
