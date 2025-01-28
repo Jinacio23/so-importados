@@ -42,7 +42,7 @@ body {
 .contact-info {
     flex: 1;
     padding: 40px;
-    background: #2c3e50;
+    background: #b44500 ;
     color: white;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 button {
-    background: #3498db;
+    background: #d45003;
     color: white;
     border: none;
     padding: 12px 30px;
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-    background: #2980b9;
+    background: #b44500;
 }
 
 .info-item {
@@ -95,7 +95,6 @@ button:hover {
 .info-item i {
     width: 40px;
     height: 40px;
-    background: rgba(255,255,255,0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
