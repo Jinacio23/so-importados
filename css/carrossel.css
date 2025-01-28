@@ -1,0 +1,53 @@
+/* Estilo do carrossel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 63vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens do carrossel */
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Impede que os itens encolham */
+}
+
+.carousel-item img {
+    width: 50%;  /* Faz a imagem ocupar toda a largura */
+    height: 50%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* A imagem cobre toda a área sem distorção */
+    object-position: center center; /* Centraliza a imagem dentro do carrossel */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
