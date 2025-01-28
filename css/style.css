@@ -11,6 +11,13 @@
     transition: transform 0.5s ease;
 }
 
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .carousel-item {
     min-width: 100%;
     transition: opacity 1s ease;
