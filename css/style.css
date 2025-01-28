@@ -1,48 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-}
-
-.logo-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.logo {
-    width: 150px;
-}
-
-nav {
-    background-color: #333;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.nav-list li {
-    margin: 0 20px;
-}
-
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav-list a:hover {
-    color: #007bff;
-}
-
+/* Estilo do carrossel */
 .carousel {
     position: relative;
     max-width: 100%;
@@ -55,8 +11,16 @@ nav {
     transition: transform 0.5s ease;
 }
 
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .carousel-item {
     min-width: 100%;
+    transition: opacity 1s ease;
 }
 
 .carousel-item img {
@@ -64,7 +28,8 @@ nav {
     height: auto;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -84,9 +49,10 @@ nav {
     right: 10px;
 }
 
+/* Estilos dos cards de produtos */
 .product-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 40px 0;
     flex-wrap: wrap;
 }
@@ -95,12 +61,15 @@ nav {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 30%;
+    width: 20%;
     padding: 20px;
     text-align: center;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card:hover {
@@ -124,6 +93,12 @@ nav {
     color: #555;
 }
 
+.product-card strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -141,6 +116,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -165,4 +141,3 @@ footer a:hover {
         width: 90%;
     }
 }
-
