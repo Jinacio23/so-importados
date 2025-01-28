@@ -1,12 +1,3 @@
-
-h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
 /* Estilos dos cards de produtos */
 .product-section {
     display: flex;
