@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
 }
 
 header{
@@ -45,6 +46,22 @@ header div {
 img{
     width: 100%;
     height: auto;
+}
+
+.btn-car{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-car i{
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-car i:hover{
+    transform: scale(1.1);
 }
 
 .nav-list{

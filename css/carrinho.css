@@ -5,13 +5,6 @@ h2 {
     text-align: center;
 }
 
-/* Estilo geral do body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    padding: 20px;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;

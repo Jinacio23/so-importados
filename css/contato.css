@@ -70,7 +70,7 @@ body {
     resize: vertical;
 }
 
-button {
+.contact-form button {
     background: #d45003;
     color: white;
     border: none;
@@ -82,7 +82,7 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+.contact-form button:hover {
     background: #b44500;
 }
 
