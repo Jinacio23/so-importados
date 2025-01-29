@@ -12,5 +12,26 @@ function moveCarousel(direction) {
     document.querySelector('.carousel-inner').style.transform = `translateX(${newTransformValue})`;
 }
 
+// Função para abrir o pop-up
+const openPopupBtn = document.getElementById('openPopupBtn');
+const popup = document.getElementById('popup');
+const closePopupBtn = document.getElementById('closePopupBtn');
+
+// Abrir o pop-up
+openPopupBtn.addEventListener('click', () => {
+  popup.style.display = 'flex';
+});
+
+// Fechar o pop-up
+closePopupBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+// Fechar o pop-up ao clicar fora da área de conteúdo
+window.addEventListener('click', (event) => {
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
+});
 
 

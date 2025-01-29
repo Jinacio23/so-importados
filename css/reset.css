@@ -96,6 +96,20 @@ img{
     word-wrap: break-word;
 }
 
+.modal {
+    display: block;
+    background-color: #bcbcbc;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    z-index: 1;
+    top: 17%;
+    left: 35%;
+    box-shadow: 11px 20px 21px -1px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
 /* Rodapé */
 footer {
     background-color: #333;
@@ -116,3 +130,84 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+#openPopupBtn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #openPopupBtn:hover {
+    background-color: #45a049;
+  }
+
+
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fechar o pop-up */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Estilos da parte esquerda do pop-up */
+  .popup-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .popup-left h2 {
+    margin: 0 0 10px;
+  }
+  
+  .popup-left p {
+    margin: 5px 0;
+  }
+  
+  .buy-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e5533d;
+  }
+  
+  /* Estilos da parte direita do pop-up */
+  .popup-right img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
