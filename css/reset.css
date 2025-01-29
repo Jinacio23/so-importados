@@ -131,7 +131,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-#openPopupBtn {
+.openPopupBtn {
     margin: 20px;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -140,7 +140,7 @@ footer a:hover {
     cursor: pointer;
   }
   
-  #openPopupBtn:hover {
+  .openPopupBtn:hover {
     background-color: #45a049;
   }
 
