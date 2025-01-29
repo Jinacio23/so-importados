@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoções - Só Importados</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/paginainicial.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carrossel.css">
-    <link rel="stylesheet" href="css/paginainicial.css">
 
     <script src="https://kit.fontawesome.com/dbd259621c.js" crossorigin="anonymous"></script>
 
-    <script src="js/js.js"></script>
+    <script src="js/js.js" defer></script>
 </head>
 
 <body>
@@ -55,6 +55,8 @@
                         <p>212 de Carolina Herrera é um perfume Floral Amadeirado Almiscarado Feminino.</p>
                     </div>
                     <p><strong>De R$ 999,90 por R$ 559,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/212feminino.jpeg" data-title="212 Feminino" data-description="212 de Carolina Herrera é um perfume Floral Amadeirado Almiscarado Feminino." data-price="De R$ 999,90 por R$ 559,99">Ver
+                        Produto</button>
                 </div>
                 <div class="product-card">
                     <div>
@@ -63,6 +65,8 @@
                         <p>Acqua di Parma, é atemporal, amado e duradouro.</p>
                     </div>
                     <p><strong>De R$ 1499,90 por R$ 1169,90</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/acuadiparma.jpeg" data-title="Acua di Parma" data-description="Acqua di Parma, é atemporal, amado e duradouro." data-price="De R$ 1499,90 por R$ 1169,90">Ver
+                        Produto</button>
                 </div>
                 <div class="product-card">
                     <div>
@@ -71,6 +75,8 @@
                         <p>Propõem a descoberta de eaux de toilette masculinos e femininos.</p>
                     </div>
                     <p><strong>De R$ 799,99 por R$ 519,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/azzaro.jpeg" data-title="Azzaro" data-description="Propõem a descoberta de eaux de toilette masculinos e femininos." data-price="De R$ 799,99 por R$ 519,99">Ver
+                        Produto</button>
                 </div>
                 <div class="product-card">
                     <div>
@@ -79,6 +85,8 @@
                         <p>Entrega atemporalidade e personalidade</p>
                     </div>
                     <p><strong>De R$ 439,99 por R$299,90</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/carolina herrera feminino.jpeg" data-title="Carolina Herrera Feminino" data-description="Entrega atemporalidade e personalidade" data-price="De R$ 439,99 por R$299,90">Ver
+                        Produto</button>
                 </div>
 
                 <div class="product-card">
@@ -88,6 +96,8 @@
                         <p>Para homens sofisticados e intrigantes.</p>
                     </div>
                     <p><strong>De R$ 699,99 por R$ 589,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/carolina herrera masculino.jpeg" data-title="Carolina Herrera Masculino" data-description="Para homens sofisticados e intrigantes." data-price="De R$ 699,99 por R$ 589,99">Ver
+                        Produto</button>
                 </div>
 
                 <div class="product-card">
@@ -97,6 +107,8 @@
                         <p>Fragrância amadeirada refrescante.</p>
                     </div>
                     <p><strong>De R$ 499,99 por R$ 239,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/ck.jpeg" data-title="212" data-description="Fragrância amadeirada refrescante." data-price="De R$ 499,99 por R$ 239,99">Ver
+                        Produto</button>
                 </div>
 
                 <div class="product-card">
@@ -106,6 +118,8 @@
                         <p>Fragrância viril e envolvente.</p>
                     </div>
                     <p><strong>De R$ 899,99 por R$ 749,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/giorgioarmani.jpg" data-title="Giorgio Armani" data-description="Fragrância viril e envolvente." data-price="De R$ 899,99 por R$ 749,99">Ver
+                        Produto</button>
                 </div>
                 <div class="product-card">
                     <div>
@@ -114,14 +128,28 @@
                         <p>Uma experiência sensorial poderosa e sensual.</p>
                     </div>
                     <p><strong>De R$ 1099,99 por R$ 697,99</strong></p>
+                    <button class="openPopupBtn" data-img="img/promoções/goodgirl.jpeg" data-title="Essencial" data-description="Uma experiência sensorial poderosa e sensual." data-price="De R$ 1099,99 por R$ 697,99">Ver
+                        Produto</button>
                 </div>
             </div>
         </section>
 
-        <!-- Pop-up com a imagem ampliada -->
-        <div class="popup" id="popup">
-            <span class="popup-close" id="popup-close">&times;</span>
-            <img src="" id="popup-image" alt="Imagem Ampliada">
+        <!-- Pop-up -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn" class="close-btn">&times;</span>
+    
+                <div class="popup-left">
+                    <h2 id="popupTitle">Produto</h2>
+                    <p id="popupDescription">Descrição do produto.</p>
+                    <p><strong id="popupPrice">Preço: R$ 0,00</strong></p>
+                    <button class="buy-btn">Comprar Agora</button>
+                </div>
+    
+                <div class="popup-right">
+                    <img id="popupImg" src="img/Masculinos/212.png" alt="Imagem do Produto">
+                </div>
+            </div>
         </div>
     </main>
 

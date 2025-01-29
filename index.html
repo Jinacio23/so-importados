@@ -67,6 +67,8 @@
                     <p>Fragrância que mostra a importância de reconhecer e celebrar cada nova conquista.</p>
                 </div>
                 <p><strong>R$ 111,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Femininos/celebre.jpg" data-title="Celebre" data-description="Fragrância que mostra a importância de reconhecer e celebrar cada nova conquista." data-price="R$ 111,99">Ver
+                    Produto</button>
             </div>
             <div class="product-card">
 
@@ -76,6 +78,8 @@
                     <p>Inspiradas nos nobres grãos de café e tão irresistíveis quanto ele.</p>
                 </div>
                 <p><strong>R$ 119,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Femininos/Coffee.png" data-title="Coffee" data-description="Inspiradas nos nobres grãos de café e tão irresistíveis quanto ele." data-price="R$ 119,99">Ver
+                    Produto</button>
             </div>
             <div class="product-card">
                 <div>
@@ -84,14 +88,18 @@
                     <p>Fragrância floral feminina sofisticada e deslumbrante.</p>
                 </div>
                 <p><strong>R$ 645,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Femininos/dior.webp" data-title="Miss Dior" data-description="Fragrância floral feminina sofisticada e deslumbrante." data-price="R$ 645,99">Ver
+                    Produto</button>
             </div>
             <div class="product-card">
                 <div>
                     <img src="img/Femininos/EGEO CHOC2.jpeg" alt="Perfume 3">
                     <h5>Egeo Choc</h5>
-                    <p>Fcombina os cheiros de Chocolate, Creme de Leite e Chantilly.</p>
+                    <p>Combina os cheiros de Chocolate, Creme de Leite e Chantilly.</p>
                 </div>
                 <p><strong>R$ 114,50</strong></p>
+                <button class="openPopupBtn" data-img="img/Femininos/EGEO CHOC2.jpeg" data-title="Egeo Choc" data-description="Combina os cheiros de Chocolate, Creme de Leite e Chantilly." data-price="R$ 114,50">Ver
+                    Produto</button>
             </div>
 
             <div class="product-card">
@@ -101,6 +109,8 @@
                     <p>Feito para homens intrigantes e cavalheiros.</p>
                 </div>
                 <p><strong>R$ 589,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Masculinos/1 Million Paco Rabanne 2.webp" data-title="Million Paco Rabanne" data-description="Feito para homens intrigantes e cavalheiros." data-price="R$ 589,99">Ver
+                    Produto</button>
             </div>
 
             <div class="product-card">
@@ -110,8 +120,10 @@
                     <p>Fragrância amadeirada refrescante que exala sofisticação.</p>
                 </div>
                 <p><strong>R$ 428,99</strong></p>
-                <button id="openPopupBtn">Ver Produto</button>
-                
+                <button class="openPopupBtn" data-img="img/Masculinos/212.png" data-title="212 VIP MASCULINO"
+                    data-description="Fragrância amadeirada refrescante que exala sofisticação."
+                    data-price="R$ 428,99">Ver Produto</button>
+
             </div>
 
             <div class="product-card">
@@ -121,6 +133,9 @@
                     <p>Inspirado na imensidão virgem sob um céu noturno azulado.</p>
                 </div>
                 <p><strong>R$ 799,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Masculinos/Dior Sauvage 2.jpg" data-title="Sauvage"
+                    data-description="Inspirado na imensidão virgem sob um céu noturno azulado."
+                    data-price="R$ 799,99">Ver Produto</button>
             </div>
             <div class="product-card">
                 <div>
@@ -129,26 +144,30 @@
                     <p>Ideal para o homem que busca uma presença marcante.</p>
                 </div>
                 <p><strong>R$ 299,99</strong></p>
+                <button class="openPopupBtn" data-img="img/Masculinos/Essencial.webp" data-title="Essencial" data-description="Ideal para o homem que busca uma presença marcante." data-price="R$ 299,99">Ver
+                    Produto</button>
             </div>
 
         </div>
     </main>
+
     <div id="popup" class="popup">
         <div class="popup-content">
             <span id="closePopupBtn" class="close-btn">&times;</span>
 
             <div class="popup-left">
-                <h2>212 VIP MASCULINO</h2>
-                <p>Descrição do produto. Características detalhadas aqui.</p>
-                <p><strong>Preço: R$ 199,99</strong></p>
+                <h2 id="popupTitle">Produto</h2>
+                <p id="popupDescription">Descrição do produto.</p>
+                <p><strong id="popupPrice">Preço: R$ 0,00</strong></p>
                 <button class="buy-btn">Comprar Agora</button>
             </div>
 
             <div class="popup-right">
-                <img src="img/Masculinos/212.png" alt="Imagem do Produto">
+                <img id="popupImg" src="img/Masculinos/212.png" alt="Imagem do Produto">
             </div>
         </div>
     </div>
+
     <footer>
         <div>
             <span>Grupo: Arthur, Abner e José</span>
