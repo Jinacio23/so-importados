@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="css/paginainicial.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <h1>Só Importados</h1>
+            </div>
+            <div class="profile">
+                <span>usuario</span>
+                <div class="imgPerfil">
+                    <img src="img/perfil.jpg" alt="perfil">
+                </div>
+                <p>car</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="promoções.html">Promoções</a></li>
+                <li><a href="coleções.html">Coleções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <div class="container">
+                <h2>Carrinho de Compras</h2>
+                
+                
+                <div class="form-section">
+                    <label for="produto">Produto:</label>
+                    <select id="produto">
+                        <option value="produto1">Produto 1 - R$ 50,00</option>
+                        <option value="produto2">Produto 2 - R$ 70,00</option>
+                        <option value="produto3">Produto 3 - R$ 90,00</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-section">
+                    <label for="quantidade">Quantidade:</label>
+                    <select id="quantidade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+        
+                
+                <div class="form-section">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço">
+                </div>
+        
+               
+                <div class="form-section">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" placeholder="Digite sua cidade">
+                </div>
+        
+                <div class="form-section">
+                    <label for="estado">Estado:</label>
+                    <select id="estado">
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pr">Paraná</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                    </select>
+                </div>
+        
+             
+                <div class="frete">
+                    <label>Frete:</label>
+                    <span>R$ 11,99</span>
+                </div>
+        
+               
+                <div class="total">
+                    <label>Total:</label>
+                    <span>R$ 50,00 (Produto) + R$ 11,99 (Frete)</span>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div>
+            <span>Grupo: Arthur, Abner e José</span>
+        </div>
+        <p>&copy; 2025 Loja de Perfumes. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+
+</body>
+</html>
