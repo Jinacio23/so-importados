@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/carrinho.css">
 
+    <link rel="stylesheet" href="js/pagamento.js">
+
     <script src="https://kit.fontawesome.com/dbd259621c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -66,12 +68,17 @@
             </div>
 
             <div class="form-section">
-                <label for="valorTotal">Valor Total + Frete:</label>
-                <span id="valorTotal">R$ 50,00 (Produto) + R$ 11,99 (Frete)</span>
+                <span>Valor Total:</span>
+                <span id="valorTotal"></span><br>
+
+                <span>Frete: R$ 11,99</span><br>
+
+                <span>Valor Total:</span>
+                <span id="Total"></span><br>
             </div>
 
             <div class="form-section">
-                <button class="btn-finalizar">Finalizar Compra</button>
+                <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
             </div>
         </div>
     </main>
