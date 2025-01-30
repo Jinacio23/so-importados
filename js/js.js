@@ -51,4 +51,37 @@ window.addEventListener('click', (event) => {
     }
 });
 
+function adicionarProdutoCarrinho() {
+    alert("Teste2")
+}
 
+// Função para adicionar um produto ao localStorage
+function adicionarProdutoCarrinho() {
+    // Recupera o título e o preço do produto
+    const titulo = document.getElementById("popupTitle").innerText;
+    const precoTexto = document.getElementById("popupPrice").innerText;
+
+    // Extrai o valor numérico do preço (remove "Preço: R$" e converte para número)
+    const preco = parseFloat(precoTexto.replace("Preço: R$", "").replace(",", "."));
+
+    // Cria um objeto com as informações do produto
+    const produto = {
+        nome: titulo,
+        preco: preco
+    };
+
+    // Recupera a array de produtos do localStorage (se existir)
+    let produtos = JSON.parse(localStorage.getItem("Produtos")) || [];
+
+    // Adiciona o novo produto à array
+    produtos.push(produto);
+
+    // Salva a array atualizada no localStorage
+    localStorage.setItem("Produtos", JSON.stringify(produtos));
+}
+
+// Função para limpar todos os produtos do localStorage
+function limparProdutos() {
+    localStorage.removeItem("Produtos");
+    console.log("Todos os produtos foram removidos do localStorage.");
+}
