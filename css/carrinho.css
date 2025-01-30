@@ -149,3 +149,32 @@ select, input[type="text"] {
     background-color: #45a049;
     transform: scale(1.05);
 }
+
+/* tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.total {
+    font-weight: bold;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #cc0000;
+}

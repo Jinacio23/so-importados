@@ -78,6 +78,7 @@ function adicionarProdutoCarrinho() {
 
     // Salva a array atualizada no localStorage
     localStorage.setItem("Produtos", JSON.stringify(produtos));
+    popup.style.display = 'none';
 }
 
 // Função para limpar todos os produtos do localStorage
@@ -85,3 +86,12 @@ function limparProdutos() {
     localStorage.removeItem("Produtos");
     console.log("Todos os produtos foram removidos do localStorage.");
 }
+
+function clearStorage() {
+    // Remove os itens do localStorage
+    localStorage.removeItem("Produtos");
+    console.log("LocalStorage limpo com sucesso!");
+}
+
+// Executa a função ao carregar a página
+window.onload = clearStorage;
