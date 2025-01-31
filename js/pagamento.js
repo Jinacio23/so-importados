@@ -11,7 +11,6 @@ document.getElementById('formaPagamento').addEventListener('change', function() 
 
 function finalizarCompra() {
     localStorage.setItem("fim", true);
-    window.location.href = '../index.html';
 }
 
 function recuperarValorTotal() {
