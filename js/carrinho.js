@@ -33,9 +33,8 @@ function carregarCarrinho() {
 
     // Atualiza o valor total
     totalValue.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
-    if(localStorage.getItem("totalValue")){
-        localStorage.setItem("totalValue", total);
-    }
+   localStorage.setItem("totalValue", total);
+
 }
 
 // Função para limpar o carrinho
